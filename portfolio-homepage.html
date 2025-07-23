@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakshi Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sakshi.</div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-text">
+                <p class="role">Creative UI/UX Designer & Web Developer</p>
+                <h1>Hi, I'm <span class="highlight">Sakshi</span></h1>
+                <h2>Crafting beautiful and functional web experiences</h2>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.ibb.co/1tnQCgcr/Whats-App-Image-2025-07-12-at-11-35-58-AM.jpg" alt="Sakshi Photo" />
+            </div>
+        </div>
+    </header>
+</body>
+<!---------about me ------->
+<div id="about">
+    <div class="container">
+        <div class="left">
+            <img src="https://i.ibb.co/1tnQCgcr/Whats-App-Image-2025-07-12-at-11-35-58-AM.jpg" alt="Profile Picture" />
+        </div>
+        <div class="right">
+            <h1>About Me</h1>
+            <p>
+                I am a passionate and curious tech enthusiast, currently pursuing my degree in E&TC Engineering, with a keen interest in Full Stack Development, Cybersecurity, and AI-powered projects. I enjoy building meaningful, user-friendly digital experiences. I was the president of the Books and Beyond Club (2024-2025), and also led the ELC Club, gaining early leadership experience during my first year (2022-2023).
+            </p>
+
+            <div class="tabs">
+                <button class="tab-button active" data-tab="skills">Skills</button>
+                <button class="tab-button" data-tab="experience">Experience</button>
+                <button class="tab-button" data-tab="education">Education</button>
+            </div>
+
+            <div class="tab-content active" id="skills">
+                <p><span class="highlight">UI/UX</span><br />Designing Website interfaces</p>
+                <p><span class="highlight">Web Development</span><br />Responsive Website Development</p>
+                <p><span class="highlight">Cybersecurity Analyst</span><br />IAM, Threat and Risk Management</p>
+                <p><span class="highlight">Embedded & IoT</span><br />Hands-on experience in Embedded Systems</p>
+            </div>
+
+            <div class="tab-content" id="experience">
+                <p><span class="highlight">1 MONTH</span><br />Internship in Frontend Developer at CodeAlpha</p>
+                <p><span class="highlight">1 MONTH</span><br />Internship in Embedded Systems & IoT in Pantech Solutions</p>
+                <p><span class="highlight">Job Simulation</span><br />Cybersecurity Analyst by Forge in collaboration with TCS</p>
+            </div>
+
+            <div class="tab-content" id="education">
+                <p><span class="highlight">2022-2026</span><br />Dr D.Y. Patil College of Engineering, Pune (ENTC) - 6.82 CGPA</p>
+                <p><span class="highlight">2021-2022</span><br />Army Public School, Ahmednagar (HSC) - 78%</p>
+                <p><span class="highlight">2019-2020</span><br />Army Public School, Ahmednagar (SSC) - 91%</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------services------>
+<div id="services">
+    <div class="container">
+        <section class="projects-section">
+            <h2>Services</h2>
+
+            <div class="card-container">
+                <div class="card" onclick="scrollToSection('project1')">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Designed a modern and responsive personal portfolio to showcase skills, projects, and experiences.</p>
+                    <a href="#project1">Learn more</a>
+                </div>
+
+                <div class="card" onclick="scrollToSection('project2')">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Built real-time, responsive websites like RJ Fitness with dynamic content and smooth user interaction.</p>
+                    <a href="#project2">Learn more</a>
+                </div>
+
+                <div class="card" onclick="scrollToSection('project3')">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Embedded & IoT</h3>
+                    <p>Hands-on experience with microcontrollers, sensors, and real-time data to build smart systems.</p>
+                    <a href="#project3">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details -->
+        <section id="project1" class="detail-section">
+            <h2>Personal Portfolio Website</h2>
+            <p>A fully responsive and interactive personal portfolio built using HTML, CSS, and JavaScript to professionally showcase my skills, projects, and experience.
+                Features include:<br>
+                >An elegant landing page with smooth navigation<br>
+                >"About Me", "Projects", and "Contact" sections<br>
+                >Downloadable CV and external links to GitHub, LinkedIn, and more<br>
+                >Clean UI with a custom pastel theme for a modern look<br>
+                This project helped me practice real-world frontend development principles, responsive design, and personal branding through web design.</p>
+        </section>
+
+        <section id="project2" class="detail-section">
+            <h2>RJ Fitness</h2>
+            <p>A real-time, responsive fitness website developed using HTML, CSS, and JavaScript, designed to deliver an engaging user experience for fitness enthusiasts.
+                Key highlights:<br>
+                >Interactive UI with dynamic sections for schedules and updates<br>
+                >Smooth navigation and clean layout for effortless browsing<br>
+                >Optimized for mobile and desktop views with responsive design<br>
+                >Focused on usability and aesthetic appeal to match a fitness brand<br>
+                This project enhanced my skills in building real-world, user-centric web interfaces with a strong emphasis on performance and responsiveness.
+                <br><a href="https://rjfitness.ccbp.tech" target="_blank" class="custom-button">🔗 rjfitness.ccbp.tech</a>
+            </p>
+        </section>
+
+        <section id="project3" class="detail-section">
+            <h2>Personal AI Chatbot using ESP32</h2>
+            <p>Developed a voice-interactive AI chatbot using the ESP32 microcontroller, enabling real-time communication through speech and text. The system captures user voice input via a microphone, converts it to text using Google Speech API, and sends it to cloud-based AI platforms like OpenAI or Dialogflow. The chatbot then responds with intelligent replies, which are delivered through both an OLED display and a speaker using text-to-speech (TTS) synthesis. This low-cost, portable assistant is ideal for personal use, home automation, and educational applications. The project demonstrated seamless integration of hardware and software, cloud API communication, and real-time interaction, all built on a compact, energy-efficient platform.<br><a href="https://i.ibb.co/22JYS4w/Whats-App-Image-2025-07-18-at-11-27-29-AM.jpg" target="_blank" class="image-button">
+                    📸 View Image
+                </a>
+            </p>
+        </section>
+    </div>
+
+</div>
+<!----------contact---------->
+<div id="contact">
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Contact Me</h2>
+                <p><i class="fas fa-paper-plane"></i> ✉️sakshiyenare2003@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i>📞 +91 9699767035</p>
+
+                <a href="Sakshi Yenare CV Resume.pdf" download class="btn">Download CV</a>
+
+
+
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <p>Copyright © Sakshi. All rights reserved.</p>
+</footer>
+
+</html>
